@@ -89,6 +89,30 @@ public:
 };
 */
 
+//Инкапсуляция
+class CoffeeGrinder
+{
+private:
+	bool CheckVoltage()
+	{
+		return false;
+	}
+	
+public:
+	void Start()
+	{
+		bool voltagIsNormal = CheckVoltage();
+		if (voltagIsNormal)
+		{ 
+		std::cout << "vJJJJJJJJ" << std::endl;
+		}
+		else
+		{
+			std::cout << "Beep Beep" << std::endl;
+		}
+	}
+};
+
 
 int main() {
 	setlocale(LC_ALL, "Rus");
@@ -127,6 +151,9 @@ int main() {
 	std::cout << "resultY " << resultY << std::endl;
 	*/
 
+//Инкапсуляция
+	CoffeeGrinder a;
+	a.Start();
 
 
 	return 0;
